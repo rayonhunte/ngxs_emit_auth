@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 reset">
+      <div class="card text-center">
+        <div class="card-header">
+         Reset Password 
+        </div>
+        <div class="card-body">
+          <form [formGroup]="restForm" (ngSubmit)="OnReset()">
+            <div class="form-group">
+              <label for="email">Email Adress</label>
+              <input type="email" class="form-control" placeholder="Email" formControlName="email">
+            </div>
+            <button type="submit" class="btn" [disabled]="!restForm.valid">Submit</button>
+          </form>
+          <div class="alert msgAlert" role="alert" *ngIf="resetMsg">
+            {{resetMsg}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>

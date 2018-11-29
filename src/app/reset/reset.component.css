@@ -1,0 +1,29 @@
+.reset {
+    padding-top: 5em;
+}
+
+.card-header {
+    background-color: #249D90;
+    color: beige;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: #27423F;
+}
+
+label {
+    color: beige;
+    font-weight: bold;
+}
+
+button {
+    background-color: #249D90;
+    color: beige;
+}
+
+
+.msgAlert {
+    margin-top: 1em;
+    color: #249D90;
+}
